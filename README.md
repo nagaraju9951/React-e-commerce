@@ -23,17 +23,17 @@
 - Click on "Register Domain" and follow the prompts.
 
 # Create a Hosted Zone
-In Route 53, click "Create Hosted Zone".
-Enter your domain name and choose "Public Hosted Zone".
+- In Route 53, click "Create Hosted Zone".
+- Enter your domain name and choose "Public Hosted Zone".
 
-Update Domain's Name Servers
-Update your domain registrar to use the name servers provided by Route 53.
-Create an A Record
-In your hosted zone, click "Create Record".
-Enter "@" for the root domain or "www" for a subdomain.
-Select "A - IPv4 address" as the record type.
-Enter the public IP address of your EC2 instance.
-Click "Create records".
+- Update Domain's Name Servers
+- Update your domain registrar to use the name servers provided by Route 53.
+  # Create an A Record
+- In your hosted zone, click "Create Record".
+- Enter "@" for the root domain or "www" for a subdomain.
+- Select "A - IPv4 address" as the record type.
+- Enter the public IP address of your EC2 instance.
+- Click "Create records".
 
 # Verify Your Deployment
-Allow some time for DNS propagation, then visit your domain to see your React application live.
+- Allow some time for DNS propagation, then visit your domain to see your React application live.
