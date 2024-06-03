@@ -1,26 +1,26 @@
 # React-e-commerce website
 
 # install docker on ec2-instance 
-. sudo apt update
-sudo apt install docker.io -y
-sudo systemctl start docker
-sudo systemctl enable docker
+- sudo apt update
+- sudo apt install docker.io -y
+- sudo systemctl start docker
+- sudo systemctl enable docker
 
 # Create and Build Your React Application
-npm install --save-dev vite
-npm run build
+- npm install --save-dev vite
+- npm run build
 # Build and Run the Docker Image and Docker container
 
-docker build -t my-react-app .
-docker images 
-docker run -d -p 80:80 my-react-app
-docker ps 
-docker ps -a
+- docker build -t my-react-app .
+- docker images 
+- docker run -d -p 80:80 my-react-app
+- docker ps 
+- docker ps -a
 
 # Set Up a Custom Domain with Route 53
-Register a Domain (if you don't have one)
-Go to Route 53 in AWS Management Console.
-Click on "Register Domain" and follow the prompts.
+- Register a Domain (if you don't have one)
+- Go to Route 53 in AWS Management Console.
+- Click on "Register Domain" and follow the prompts.
 
 # Create a Hosted Zone
 In Route 53, click "Create Hosted Zone".
